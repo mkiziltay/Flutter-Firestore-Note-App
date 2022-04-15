@@ -1,0 +1,26 @@
+# Note App
+* Realtime Database firestore
+* Backend designed with freeplan.
+* Used stream.builder for realtime changes.
+
+## Code Written Directories 
+* android/app/.. (changes : from flutter firebase document)
+* android/build-gradle (changes : from flutter firebase document)
+* android/app/build-gradle (changes : from flutter firebase document)
+* main.dart
+* lib/...
+* pubspec.yaml
+
+## Used : Images & Vectors
+* No spesific images and vectors.
+
+## Used : Spesific Libraries
+  * * ## Firebase libraries 
+* cloud_firestore:  
+* firebase_core: ^1.14.0
+* google_fonts: ^2.3.1
+* intl: ^0.17.0
+
+## Screen View Example
+<img src="https://github.com/mkiziltay/Firebase-Note-App/blob/master/note_app_screenshot.png" alt = "Sample Screenview" width=394 height=851>
+
