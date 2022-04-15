@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "418731580300",
+    "project_id": "currencies-c383c",
+    "storage_bucket": "currencies-c383c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418731580300:android:7aa54a94465884908ad4a9",
+        "android_client_info": {
+          "package_name": "com.example.currencies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418731580300-qq90oc1i34augp28tl1kofuovfevidq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqO7Tp2OxhfqeQzLYtXAziVYUDasMokHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "418731580300-qq90oc1i34augp28tl1kofuovfevidq6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
