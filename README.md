@@ -22,5 +22,5 @@
 * intl: ^0.17.0
 
 ## Screen View Example
-<img src="https://github.com/mkiziltay/Firebase-Note-App/blob/master/note_app_screenshot.png" alt = "Sample Screenview" width=394 height=851>
+<img src="https://github.com/mkiziltay/Flutter-Firestore-Note-App/blob/main/note_app_screenshot.png" alt = "Sample Screenview" width=394 height=851>
 
