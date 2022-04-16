@@ -118,6 +118,6 @@ class _NoteReaderState extends State<NoteReaderScreen> {
         .then((value) {
       print('${id} succesfully deleted...');
       Navigator.pop(context);
-    }).catchError((error) => print('Failed to delete new note due to $error'));
+    }).catchError((error) => print('Failed to delete the note due to $error'));
   }
 }
