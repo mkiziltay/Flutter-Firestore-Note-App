@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:noteapp/style/app_style.dart';
-import 'package:noteapp/widgets/note_reader_screen.dart';
 
 Widget noteCard(Function()? onTap,QueryDocumentSnapshot doc) {
   return InkWell(
