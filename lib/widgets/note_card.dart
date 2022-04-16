@@ -6,8 +6,8 @@ Widget noteCard(Function()? onTap,QueryDocumentSnapshot doc) {
   return InkWell(
     onTap: onTap,
     child: Container(
-      padding: EdgeInsets.all(8.0),
-      margin: EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(8.0),
+      margin: const EdgeInsets.all(8.0),
       decoration: BoxDecoration(
           color: AppStyle.cardColors[int.parse(doc['color_id'])],
           borderRadius: BorderRadius.circular(8.0)),
