@@ -30,7 +30,7 @@ class _NoteReaderState extends State<NoteReaderScreen> {
         elevation: 0.0,
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 10),
         child: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Column(
@@ -62,8 +62,7 @@ class _NoteReaderState extends State<NoteReaderScreen> {
               GestureDetector(
                   onTap: () {
                     editcontent = !editcontent;
-                    print(
-                        'editcontent = $editcontent and id = ${widget.doc.id}');
+                    print('editcontent = $editcontent and id = ${widget.doc.id}');
                     setState(() {});
                   },
                   child: editcontent == true
