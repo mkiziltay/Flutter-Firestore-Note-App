@@ -20,12 +20,12 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: AppStyle.mainColor,
         appBar: AppBar(
           elevation: 0.0,
-          title: Text('My Notes'),
+          title: const Text('My Notes'),
           centerTitle: true,
           backgroundColor: AppStyle.mainColor,
         ),
         body: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     fontWeight: FontWeight.bold,
                     fontSize: 22.0),
               ),
-              SizedBox(height: 20.0),
+              const SizedBox(height: 20.0),
               Expanded(
                 child: StreamBuilder<QuerySnapshot>(
                     stream: FirebaseFirestore.instance
@@ -45,12 +45,12 @@ class _HomeScreenState extends State<HomeScreen> {
                         .snapshots(),
                     builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
                       if (snapshot.connectionState == ConnectionState.waiting) {
-                        return Center(child: CircularProgressIndicator());
+                        return const Center(child: CircularProgressIndicator());
                       }
                       if (snapshot.hasData) {
                         return GridView(
                           gridDelegate:
-                              SliverGridDelegateWithFixedCrossAxisCount(
+                              const SliverGridDelegateWithFixedCrossAxisCount(
                             crossAxisCount: 2,
                           ),
                           children: snapshot.data!.docs
@@ -79,8 +79,8 @@ class _HomeScreenState extends State<HomeScreen> {
             MaterialPageRoute(builder: (context)=> NoteEditorScreen())
             );
           },
-          label: Text('Add Note'),
-          icon: Icon(Icons.add),
+          label: const Text('Add Note'),
+          icon: const Icon(Icons.add),
         ));
   }
 }
