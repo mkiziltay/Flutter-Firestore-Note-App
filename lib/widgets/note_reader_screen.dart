@@ -89,6 +89,16 @@ class _NoteReaderState extends State<NoteReaderScreen> {
           ),
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: AppStyle.accentColor,
+        onPressed: () async {
+          FirebaseFirestore.instance.collection('Notes').doc(widget.doc.id).delete().then((value) {
+            print('${widget.doc.id} succesfully deleted...');
+          }).catchError(
+              (error) => print('Failed to delete new note due to $error'));
+        },
+        child: const Icon(Icons.delete),
+      ),
     );
   }
 
