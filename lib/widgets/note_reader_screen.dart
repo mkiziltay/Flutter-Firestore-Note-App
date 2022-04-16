@@ -1,5 +1,4 @@
 // ignore_for_file: non_constant_identifier_names, avoid_init_to_null
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:noteapp/style/app_style.dart';

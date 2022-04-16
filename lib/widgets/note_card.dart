@@ -16,9 +16,9 @@ Widget noteCard(Function()? onTap,QueryDocumentSnapshot doc) {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(doc['note_title'], style: AppStyle.mainTitle),
-          SizedBox(height: 4.0),
+          const SizedBox(height: 4.0),
           Text(doc['creation_date'], style: AppStyle.dateTitle),
-          SizedBox(height: 4.0),
+          const SizedBox(height: 4.0),
           Text(doc['note_content'].toString().replaceAll("\n", "..."), style: AppStyle.mainTitle,
           overflow: TextOverflow.ellipsis),
         ],
