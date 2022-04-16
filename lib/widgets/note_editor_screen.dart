@@ -17,21 +17,22 @@ class _NoteEditorScreenState extends State<NoteEditorScreen> {
   int color_id = Random().nextInt(AppStyle.cardColors.length);
   //String date = DateTime.now();
   String date = DateFormat('dd.MM.yyyy HH:mm').format(DateTime.now());
-  //final DateFormat formatter = DateFormat('yyyy-MM-dd');
-  TextEditingController _titleController = TextEditingController();
-  TextEditingController _mainController = TextEditingController();
+
+  final TextEditingController _titleController = TextEditingController();
+  final TextEditingController _mainController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: AppStyle.cardColors[color_id],
       appBar: AppBar(
         backgroundColor: AppStyle.cardColors[color_id],
         elevation: 0.0,
-        title: Text(
+        title: const Text(
           'Add a new Note',
           style: TextStyle(color: Colors.black),
         ),
-        iconTheme: IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.black),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -40,23 +41,28 @@ class _NoteEditorScreenState extends State<NoteEditorScreen> {
           children: [
             TextField(
               controller: _titleController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                   border: InputBorder.none, hintText: 'Note Title'),
               style: AppStyle.mainTitle,
             ),
-            SizedBox(height: 8.0),
+            const SizedBox(height: 8.0),
             Text(
               date,
               style: AppStyle.dateTitle,
             ),
-            SizedBox(height: 28.0),
-            TextField(
-              controller: _mainController,
-              keyboardType: TextInputType.multiline,
-              maxLines: null,
-              decoration: InputDecoration(
-                  border: InputBorder.none, hintText: 'Note content'),
-              style: AppStyle.mainContent,
+            const SizedBox(height: 28.0),
+            SingleChildScrollView(scrollDirection: Axis.vertical,
+              child: Container(
+                height: 300,
+                child: TextField(
+                  controller: _mainController,
+                  keyboardType: TextInputType.multiline,
+                  maxLines: null,
+                  decoration: const InputDecoration(
+                      border: InputBorder.none, hintText: 'Note content'),
+                  style: AppStyle.mainContent,
+                ),
+              ),
             )
           ],
         ),
@@ -75,7 +81,7 @@ class _NoteEditorScreenState extends State<NoteEditorScreen> {
           }).catchError(
               (error) => print('Failed to add new note due to $error'));
         },
-        child: Icon(Icons.save),
+        child: const Icon(Icons.add_box),
       ),
     );
   }
