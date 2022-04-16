@@ -102,7 +102,7 @@ class _NoteReaderState extends State<NoteReaderScreen> {
         .collection('Notes')
         .doc(widget.doc.id)
         .update({field: value}).then((result) {
-      print("changes applied succesfully...");
+      print("note changes applied succesfully...");
     }).catchError((onError) {
       print("onError");
     });
