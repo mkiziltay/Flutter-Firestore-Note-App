@@ -1,4 +1,4 @@
-# Note App
+# Note App with CRUD
 * Realtime Database firestore
 * Backend designed with freeplan.
 * Used stream.builder for realtime changes.
