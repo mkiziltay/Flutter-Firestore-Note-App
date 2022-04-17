@@ -18,8 +18,8 @@
   *  ### Firebase libraries 
     * cloud_firestore:  
     * firebase_core: ^1.14.0
-    * google_fonts: ^2.3.1
-    * intl: ^0.17.0
+  * google_fonts: ^2.3.1
+  * intl: ^0.17.0
 
 ## Screen View Example
 <img src="https://github.com/mkiziltay/Flutter-Firestore-Note-App/blob/main/note_app_screenshot.png" alt = "Sample Screenview" width=394 height=851>
