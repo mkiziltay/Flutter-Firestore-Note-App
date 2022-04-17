@@ -2,6 +2,7 @@
 * Realtime Database firestore
 * Backend designed with freeplan.
 * Used stream.builder for realtime changes.
+* Including Note CRUD operations.
 
 ## Code Written Directories 
 * android/app/.. (changes : from flutter firebase document)
