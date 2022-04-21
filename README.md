@@ -1,6 +1,6 @@
 # Note App with CRUD
 * Realtime Database firestore
-* Backend designed with freeplan. **So dataBase maybe locked when you see this project.**
+* Backend designed with freeplan. **So dataBase may be locked when you see this project.**
 * Used stream.builder for realtime changes.
 * Used GridDelegate for viewing notes.
 * Including Note CRUD operations.
